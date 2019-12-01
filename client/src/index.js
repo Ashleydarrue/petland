@@ -4,8 +4,8 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
-import axios from 'axios'
-axios.defaults.withCredentials = true
+// import axios from 'axios'
+// axios.defaults.withCredentials = true
 
 
 ReactDOM.render(

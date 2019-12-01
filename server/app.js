@@ -9,6 +9,7 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 const cors         = require('cors');
+const nocache = require('nocache')
 
 mongoose
   .connect('mongodb://localhost/petland', {useNewUrlParser: true})
@@ -24,14 +25,14 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
  
-app.use(nocache())
+// app.use(nocache())
 
 // Set "Access-Control-Allow-Origin" header
 app.use(
   cors({
     origin: (origin, cb) => {
       cb(null, origin
-         && origin.startsWith('http://localhost:')
+        //  && origin.startsWith('http://localhost:')
          )
     },
     optionsSuccessStatus: 200,
