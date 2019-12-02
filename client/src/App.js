@@ -9,7 +9,9 @@ import './App.scss';
 
 export default class App extends Component{
    state = {
-     petData: []
+     petData: [],
+     filteredData: [],
+     gender: true
    }
   
 
@@ -30,11 +32,36 @@ export default class App extends Component{
         console.log(err);
       });
   } 
+
+  // filterPets(e) {
+  //   console.log(this.state.petData)
+  //   e.preventDefault()
+  //   // console.log(this.state.petData)
+  //   let males = this.state.petData.filter(pet => 
+  //       pet.gender === 'Male' &&
+  //       pet.location === 'Plantation'
+  //     )
+  //     console.log(males)
+
+  //   // copy.filter()
+  // }
+
+  // handleGender(e) {
+  //   const target = e.target;
+  //   const value = target.type === 'checkbox' ? target.checked : target.value;
+  //   // const name = target.name;
+  //   console.log(value)
+
+  //   this.setState({
+  //     gender: value
+  //   });
+  // }
   
   showPets(){
     return this.state.petData.map(eachPet => {
       return(
         <Pets
+        Key= {eachPet.Id}
         petType = {eachPet.petType}
         location =  {eachPet.location}
         breed = {eachPet.breed}
@@ -57,7 +84,29 @@ export default class App extends Component{
     <div className="App">
       <Nav/>
       <Header/>
+      {/* <h4>Filters</h4>
+
+      <form action="#">
+    <p>
+      <label>
+        <input 
+        type="checkbox" 
+        checked = {this.state.gender}
+        onChange ={(e) => {this.handleGender(e)}}
+        />
+        <span>Gender</span>
+      </label>
+    </p>
+        </form>
+
+
+        <button onClick ={(e)=> this.filterPets(e)}>
+        Ugly button lol
+        </button> */}
+        
+         <div className="allPetCards">
       {this.showPets()}
+         </div>
     </div>
   );
 

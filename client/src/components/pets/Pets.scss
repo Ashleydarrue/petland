@@ -1,0 +1,212 @@
+*{
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 320px) {
+  .card.small {
+    height: 350px !important;
+    box-sizing: border-box !important;
+    margin: 20px 30px !important;
+}
+
+.petInfo{
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom:  1px dotted black;
+}
+
+.fa-paw {
+  font-size: 9px;
+  padding: 1px 5px;
+}
+.title1{
+  line-height: 0px !important;
+}
+.card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+  
+  .fa-bone{
+    color: #D45224;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  .fa-chevron-up{
+    font-size: 12px;
+  }
+  
+  .locationButton{
+    color: white !important;
+    font-size: 12px;
+     background-color: #D45224;
+     color: white;
+     border-radius: 8px;
+     padding: 5px 10px;
+  }
+
+  .infoButton{
+    color: #D45224;
+  }
+
+  .petBreed{
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    text-align: center;
+    color: #D45224;
+  }
+  .title2{
+    margin-bottom: 20px;
+  }
+
+  .infoRow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1px 5px;
+  }
+  .btnContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .inquireBtn{
+    background-color: #D45224 !important;
+    border-radius: 8px !important;
+    margin:  5px 5px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 480px) {
+  .card.small {
+    height: 350px !important;
+    box-sizing: border-box !important;
+    margin: 20px 30px !important;
+}
+
+.card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+  
+  .fa-bone{
+    color: #D45224;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  .fa-chevron-up{
+    font-size: 12px;
+  }
+  
+  .locationButton{
+    font-size: 12px;
+     background-color: #D45224;
+     color: white;
+     border-radius: 12px;
+     padding: 5px 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card.small {
+    height: 350px !important;
+    box-sizing: border-box !important;
+    margin: 20px 30px !important;
+}
+
+.card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+  .fa-bone{
+    color: #D45224;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  .fa-chevron-up{
+    font-size: 12px;
+  }
+  
+  .locationButton{
+    font-size: 12px;
+     background-color: #D45224;
+     color: white;
+     border-radius: 12px;
+     padding: 5px 5px;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card.small {
+    height: 350px !important;
+    width: 40% !important;
+}
+
+.card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+  
+  .fa-bone{
+    color: #D45224;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  .fa-chevron-up{
+    font-size: 12px;
+  }
+  
+  .locationButton{
+    font-size: 12px;
+     background-color: #D45224;
+     color: white;
+     border-radius: 12px;
+     padding: 5px 5px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card.small {
+    height: 350px !important;
+    width: 25% !important;
+ }
+ .card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card.small {
+    height: 350px !important;
+    width: 25% !important;
+ }
+ .card-title{
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+
+}
