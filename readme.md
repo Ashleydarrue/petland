@@ -21,4 +21,8 @@ by following these simple steps.
   Now you'll want to navigate to the client folder through the terminal and run the following command:
  $npm start
  
- 
+ ### You're all set
+ Once the client was started the terminal should have taken you to localhost:300. 
+ If not simply type http://localhost:3000/ in your browser!
+
+ Happy Coding or Viewing!
