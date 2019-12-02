@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import './Pets.scss'
 
 export default class Pets extends Component {
@@ -7,7 +7,7 @@ export default class Pets extends Component {
     return (
       <div className="card small">
     <div className="card-image waves-effect waves-block waves-light">
-      <img className="activator" src="../../../christamsDoggie.jpeg"/>
+      <img className="activator" src="../../../christamsDoggie.jpeg" alt="placeHolderImage"/>
     </div>
     <div className="card-content activator">
   <p className=" activator petInfo">{this.props.petType}<i class="fas fa-paw"></i>{this.props.gender}<i class="fas fa-paw"></i>refid:{this.props.refId}<i class="fas fa-paw"></i>{this.props.dob}</p>
@@ -27,8 +27,8 @@ export default class Pets extends Component {
      <span class="infoRow"><p>Location</p><p>{this.props.location}</p></span>
      <span class="infoRow"><p>REFID</p><p>{this.props.refId}</p></span>
      <div className="btnContainer">
-    <button className="btn inquireBtn"><i class="fas fa-info"></i>{' '}Inquire Today</button>
-  <button className="btn inquireBtn"><i class="fas fa-phone-alt"></i>{' '}Call to reserve</button>
+    <button className="btn-small inquireBtn"><i class="fas fa-info"></i>{' '}Inquire Today</button>
+  <button className="btn-small inquireBtn"><i class="fas fa-phone-alt"></i>{' '}Call to reserve</button>
      </div>
     </div>
   </div>

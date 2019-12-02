@@ -1,7 +1,8 @@
 *{
   font-family: 'Segoe UI';
-  font-weight: 400;
 }
+
+
 
 @media only screen and (min-width: 320px) {
   .card.small {
@@ -194,6 +195,9 @@
   font-size: 16px !important;
   text-align: center;
 }
+.card-title {
+  margin-bottom: 23px !important;
+}
 
 }
 
@@ -208,5 +212,6 @@
   font-size: 16px !important;
   text-align: center;
 }
+
 
 }

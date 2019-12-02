@@ -1,0 +1,45 @@
+.sideNav {
+  position: fixed;
+  right: 0;
+  top: 20vh;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  z-index: 1000;
+}
+
+.sideNav > ul > li {
+  padding: 2px;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.sideNav > ul > li > i{
+  color: black;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .sideNav {
+    position: fixed;
+    bottom: 0;
+    top: 95vh;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    z-index: 1000;
+    width: 80vw;
+    margin-right: 10vw;
+    background:rgba(255, 255, 255, 0.9);
+  }
+
+  .sideNav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sideNav > ul > li {
+    margin-top: 6px;
+    padding: 0;
+  }
+
+}

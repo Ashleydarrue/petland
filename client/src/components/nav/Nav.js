@@ -25,10 +25,14 @@ export default class Nav extends Component {
         </nav>
       
         <ul className="sidenav" id="mobile-demo">
-          <li><Link to="mobile.html">Sass</Link></li>
-          <li><Link to="badges.html">Components</Link></li>
-          <li><Link to="collapsible.html">Javascript</Link></li>
-          <li><Link to="mobile.html">Mobile</Link></li>
+               {/* <i className="material-icons right">close</i> */}
+              <li><Link to="/" className="navLinks">Breeds</Link></li>
+              <li><Link to="/" className="navLinks">Products</Link></li>
+              <li><Link to="/" className="navLinks">Perks</Link></li>
+              <li><Link to="/" className="navLinks">Cares</Link></li>
+              <li><Link to="/" className="navLinks">Financing</Link></li>
+              <li><Link to="/" className="navLinks">About</Link></li>
+              <li><Link to="/" className="navLinks">Contact</Link></li>
         </ul>
 
     </React.Fragment>

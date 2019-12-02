@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import Nav from './components/nav/Nav';
 import Header from './components/header/Header';
 import Pets from './components/pets/Pets';
+import ScrollUp from './components/scrollup/Scrollup'
+import Sidenav from './components/sidenav/Sidenav';
+import Footer from './components/footer/Footer';
+import AllFooters from './components/footer/AllFooters';
+import FilterNav from './components/filterNav/FilterNav';
+
+
 import './App.scss';
 
 // const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
@@ -84,30 +91,16 @@ export default class App extends Component{
     <div className="App">
       <Nav/>
       <Header/>
-      {/* <h4>Filters</h4>
-
-      <form action="#">
-    <p>
-      <label>
-        <input 
-        type="checkbox" 
-        checked = {this.state.gender}
-        onChange ={(e) => {this.handleGender(e)}}
-        />
-        <span>Gender</span>
-      </label>
-    </p>
-        </form>
-
-
-        <button onClick ={(e)=> this.filterPets(e)}>
-        Ugly button lol
-        </button> */}
-        
+      <Sidenav/>
+      <FilterNav/>
          <div className="allPetCards">
       {this.showPets()}
          </div>
+         <ScrollUp/>
+<AllFooters/>
+
     </div>
+    
   );
 
  }
